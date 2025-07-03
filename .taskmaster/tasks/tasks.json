@@ -1,0 +1,118 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Setup Discord Bot Infrastructure",
+        "description": "Initialize Discord bot project with basic configuration, authentication, and command handling system",
+        "details": "Create new Node.js project with Discord.js library. Set up bot token authentication, basic command registration system, and slash command handling. Create config file for Discord bot settings and environment variables. Implement basic error handling and logging system. Set up project structure with proper separation of concerns (commands, handlers, utils folders).",
+        "testStrategy": "Verify bot can connect to Discord server, respond to ping command, and handle basic slash command interactions. Test authentication and permission checking.",
+        "priority": "high",
+        "dependencies": [],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 2,
+        "title": "Implement Ambassador Role Verification",
+        "description": "Create permission system to verify users have 'ambassador' role before allowing link saving functionality",
+        "details": "Implement role checking middleware that verifies user has 'ambassador' role before executing save-link command. Create helper functions to check user permissions and handle unauthorized access attempts. Add proper error messages for users without required permissions. Include role caching system to minimize Discord API calls.",
+        "testStrategy": "Test with users having and not having ambassador role. Verify proper error messages and access control. Test role checking performance and caching.",
+        "priority": "high",
+        "dependencies": [
+          1
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 3,
+        "title": "Develop GitHub API Integration",
+        "description": "Set up GitHub API connection for repository access and pull request creation functionality",
+        "details": "Install and configure GitHub API client (Octokit). Set up GitHub authentication using personal access token or GitHub App. Implement functions to read repository contents, specifically the README file structure. Create PR creation functionality with proper commit messages and descriptions. Add error handling for GitHub API rate limits and authentication failures.",
+        "testStrategy": "Test GitHub API connection, repository reading, and PR creation. Verify rate limiting handling and authentication. Test with actual ai-driven-dev/ressources repository.",
+        "priority": "high",
+        "dependencies": [
+          1
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 4,
+        "title": "Create Web Parser for Link Analysis",
+        "description": "Implement web scraping functionality to extract metadata from provided URLs",
+        "details": "Install web scraping library (Puppeteer or Cheerio). Create parser functions to extract title, description, and content from URLs. Implement fallback mechanisms for sites that block scraping. Add timeout handling and error recovery for unreachable URLs. Extract Open Graph tags and meta tags for rich metadata. Handle different content types (websites, documentation, GitHub repos).",
+        "testStrategy": "Test with various URL types including documentation sites, GitHub repos, and regular websites. Verify metadata extraction accuracy and error handling for invalid URLs.",
+        "priority": "medium",
+        "dependencies": [
+          1
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 5,
+        "title": "Implement Save Link Command",
+        "description": "Create the main /save-link slash command with URL and description parameters",
+        "details": "Register /save-link slash command with Discord API. Implement command handler that accepts URL and description parameters. Add input validation for URL format and description length. Integrate with permission checking and web parser. Provide user feedback during processing with loading messages. Handle command timeouts and long-running operations.",
+        "testStrategy": "Test command registration, parameter validation, and user interaction flow. Verify permission integration and proper error handling for invalid inputs.",
+        "priority": "high",
+        "dependencies": [
+          2,
+          4
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 6,
+        "title": "Develop Duplicate Detection System",
+        "description": "Create algorithm to check for existing links in the repository to prevent duplicates",
+        "details": "Implement duplicate checking algorithm that compares URLs and content. Parse existing README file to extract all current links. Create fuzzy matching for similar URLs (different protocols, trailing slashes, query parameters). Implement content-based similarity checking using extracted metadata. Add caching system for repository contents to improve performance.",
+        "testStrategy": "Test duplicate detection with exact matches, similar URLs, and different content. Verify false positive handling and performance with large number of existing links.",
+        "priority": "medium",
+        "dependencies": [
+          3,
+          4
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 7,
+        "title": "Create Intelligent Link Placement System",
+        "description": "Implement categorization logic to automatically place links in appropriate README sections",
+        "details": "Analyze existing README structure and section categories. Create categorization algorithm based on extracted metadata, URL domains, and content analysis. Implement keyword matching and content classification. Add fallback to generic section when category cannot be determined. Create mapping system for different resource types (tools, documentation, tutorials, etc.).",
+        "testStrategy": "Test categorization accuracy with various link types. Verify correct section placement and fallback behavior. Test with existing repository structure.",
+        "priority": "medium",
+        "dependencies": [
+          4,
+          6
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 8,
+        "title": "Implement Pull Request Creation with Standard Format",
+        "description": "Create formatted pull requests following repository conventions with proper link placement",
+        "details": "Implement PR creation workflow that formats links according to repository standards (name, link, description, status ✅, tested by). Create proper commit messages and PR descriptions. Add the link to the appropriate README section using intelligent placement. Include user information as 'tested by' field. Generate meaningful PR titles and descriptions. Handle PR creation failures and provide user feedback.",
+        "testStrategy": "Test complete workflow from command to PR creation. Verify proper formatting, section placement, and repository conventions. Test PR creation success and failure scenarios.",
+        "priority": "high",
+        "dependencies": [
+          3,
+          5,
+          7
+        ],
+        "status": "pending",
+        "subtasks": []
+      }
+    ],
+    "metadata": {
+      "created": "2025-07-03T09:21:45.956Z",
+      "updated": "2025-07-03T09:50:40.512Z",
+      "description": "Tasks for master context"
+    }
+  }
+}
