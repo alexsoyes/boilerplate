@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/alexsoyes/boilerplate#readme",
   "dependencies": {
-    "ccusage": "^15.2.0"
+    "ccusage": "^15.2.0",
+    "task-master-ai": "^0.18.0"
   }
 }
