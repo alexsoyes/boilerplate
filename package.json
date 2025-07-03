@@ -1,0 +1,29 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "AI-Driven Dev boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexsoyes/boilerplate.git"
+  },
+  "keywords": [
+    "AI-Driven",
+    "Dev",
+    "AIDD",
+    "Boilerplate",
+    "Template"
+  ],
+  "author": "ai-driven-dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexsoyes/boilerplate/issues"
+  },
+  "homepage": "https://github.com/alexsoyes/boilerplate#readme",
+  "dependencies": {
+    "ccusage": "^15.2.0"
+  }
+}
