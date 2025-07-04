@@ -8,12 +8,14 @@ Bot Discord intelligent développé en TypeScript qui permet aux utilisateurs av
 
 - **Commande Discord `/save-link <url> [description]`** : Interface simple pour sauvegarder un lien avec description optionnelle
 - **Vérification du rôle ambassadeur** : Seuls les utilisateurs autorisés peuvent utiliser la fonctionnalité
+- **Validation URL avancée** : Vérification HTTP status, détection doublons, normalisation URL
 - **Création automatique de PR** : Génération d'une pull request sur le dépôt GitHub ai-driven-dev/ressources
 - **Intégration Claude Code** : Action GitHub automatique qui analyse le lien et place intelligemment la ressource
 - **Extraction automatique de métadonnées** : Titre, description et catégorisation automatique du lien
 - **Format standardisé** : Insertion respectant le format existant (Nom, Description en français, Statut 🔥, Testé par)
 - **Feedback utilisateur** : Retour avec lien vers la PR créée
 - **Gestion d'erreurs** : Commentaires automatiques sur la PR en cas de problème
+- **Architecture extensible** : Structure modulaire pour futures commandes Discord
 
 ## User Experience
 
