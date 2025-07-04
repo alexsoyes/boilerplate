@@ -24,7 +24,12 @@
   },
   "homepage": "https://github.com/alexsoyes/boilerplate#readme",
   "dependencies": {
+    "@octokit/rest": "^22.0.0",
+    "@types/cheerio": "^0.22.35",
+    "@types/node-fetch": "^2.6.12",
     "ccusage": "^15.2.0",
+    "cheerio": "^1.1.0",
+    "node-fetch": "^2.7.0",
     "task-master-ai": "^0.18.0"
   }
 }
