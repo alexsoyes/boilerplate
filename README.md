@@ -12,14 +12,14 @@ Ce dépôt va nous servir de base d'outils "vibe-codé" mais ultra qualitatif.
 
 | Fonctionnalité | Responsable | Use Case | Statut |
 |---|---|---|---|
-| **Modèle PRD** | @alexsoyes | Remplacer le template actuel par des PRD structurés et qualitatifs | 🔄 |
-| **Système de tâches** | @alexsoyes | Documenter Claude Code et capitaliser sur les retours TM | 📋 |
+| **Modèle PRD** | `@alexsoyes` | Remplacer le template actuel par des PRD structurés et qualitatifs | 🔄 |
+| **Système de tâches** | `@alexsoyes` | Documenter Claude Code et capitaliser sur les retours TM | 📋 |
 
 ### 🤖 Automatisation & CI/CD
 
 | Fonctionnalité | Responsable | Use Case | Statut |
 |---|---|---|---|
-| **GitHub Actions** | @mickael | Automatiser création/résolution d'issues via commandes Claude | 📋 |
+| **GitHub Actions** | `@mickael` | Automatiser création/résolution d'issues via commandes Claude | 📋 |
 
 ### 🧠 Intelligence & RAG
 
@@ -34,7 +34,7 @@ Ce dépôt va nous servir de base d'outils "vibe-codé" mais ultra qualitatif.
 |---|---|---|---|
 | **Rules & Prompts** | - | Standardiser règles et prompts pour la cohérence du code | 📋 |
 | **Agents** | - | Automatiser tâches répétitives via agents spécialisés | 📋 |
-| **Sémantique des prompts** | Chris | Approche sémantique pour améliorer la précision ([sever](https://github.com/AvitalTamir/sever)) | 📋 |
+| **Sémantique des prompts** | `Chris` | Approche sémantique pour améliorer la précision ([sever](https://github.com/AvitalTamir/sever)) | 📋 |
 | **Vibe Coding Flow** | - | Documenter le workflow "vibe-codé" reproductible | 📋 |
 
 ## Projet d'exemple - Bot Discord
@@ -44,6 +44,8 @@ Premier projet concret utilisant ce boilerplate pour démontrer ses capacités.
 ### 🎯 Objectif
 
 Créer un bot Discord "Save Link" qui permet de sauvegarder et organiser des liens partagés dans les canaux.
+
+<https://github.com/ai-driven-dev/ressources>
 
 ### 📋 Fonctionnalités prévues
 
