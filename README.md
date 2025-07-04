@@ -6,41 +6,51 @@ Ce dépôt va nous servir de base d'outils "vibe-codé" mais ultra qualitatif.
 
 ## Roadmap
 
-Ce dépôt est en cours de construction, voici les grandes lignes de la roadmap :
+**Légende :** 🔄 En cours | 📋 Planifié | ✅ Terminé | ⏸️ En pause
 
-PRP :
+### 🛠️ Outils de développement
 
-- feature instructions
-- search existing code
-- feature plan
+| Fonctionnalité | Responsable | Use Case | Statut |
+|---|---|---|---|
+| **Modèle PRD** | @alexsoyes | Remplacer le template actuel par des PRD structurés et qualitatifs | 🔄 |
+| **Système de tâches** | @alexsoyes | Documenter Claude Code et capitaliser sur les retours TM | 📋 |
 
-- [ ] Ajouter un modèle de PRD `@alexsoyes`
-  - [ ] Avoir un template correct en partant de l'AIDD
-  - [ ] Aller check BMAD
-- [ ] Créer un projet d'exemples
-  - [ ] Bot AIDD
-- [ ] Gérer le système de tâches `@alexsoyes`
-  - [ ] Notes de pourquoi Claude Code
-  - [ ] Retours sur TM
-- [ ] Ajouter les GitHub Actions pour automatiser les issues `@mickael`
-  - [ ] Config Action
-  - [ ] Créer commandes claude pour aller les créer + les résoudre
-- [ ] RAG
-  - [ ] QDrant avec MCP docker
-  - [ ] Usecase : checker si du code a déjà été écrit
-  - [ ] Partage de volume
-- [ ] MCP
-  - [ ] Tool pour attaquer QDrant : refresh, search
-  - [ ] Context 7
-  - [ ] Deep Graph
-- [ ] Rules
-- [ ] Prompts
-- [ ] Agents
-- [ ] Sémantic des prompts
-  - [ ] Chris
-  - [ ] <https://github.com/AvitalTamir/sever>
-- [ ] Vibe Coding Flow, avoir un vrai workflow
-  - [ ] Crafter un doc
+### 🤖 Automatisation & CI/CD
+
+| Fonctionnalité | Responsable | Use Case | Statut |
+|---|---|---|---|
+| **GitHub Actions** | @mickael | Automatiser création/résolution d'issues via commandes Claude | 📋 |
+
+### 🧠 Intelligence & RAG
+
+| Fonctionnalité | Responsable | Use Case | Statut |
+|---|---|---|---|
+| **RAG avec QDrant** | - | Vérifier l'existence de code similaire avant développement | 📋 |
+| **MCP Tools** | - | Outils QDrant (refresh, search) + Context 7 + Deep Graph | 📋 |
+
+### 📋 Workflow & Processus
+
+| Fonctionnalité | Responsable | Use Case | Statut |
+|---|---|---|---|
+| **Rules & Prompts** | - | Standardiser règles et prompts pour la cohérence du code | 📋 |
+| **Agents** | - | Automatiser tâches répétitives via agents spécialisés | 📋 |
+| **Sémantique des prompts** | Chris | Approche sémantique pour améliorer la précision ([sever](https://github.com/AvitalTamir/sever)) | 📋 |
+| **Vibe Coding Flow** | - | Documenter le workflow "vibe-codé" reproductible | 📋 |
+
+## Projet d'exemple - Bot Discord
+
+Premier projet concret utilisant ce boilerplate pour démontrer ses capacités.
+
+### 🎯 Objectif
+
+Créer un bot Discord "Save Link" qui permet de sauvegarder et organiser des liens partagés dans les canaux.
+
+### 📋 Fonctionnalités prévues
+
+- Détection automatique des liens dans les messages
+- Sauvegarde avec tags et catégories
+- Commandes de recherche et récupération
+- Interface web pour consultation
 
 ## Comment utiliser ce dépôt ?
 
